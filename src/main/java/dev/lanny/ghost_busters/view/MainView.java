@@ -43,7 +43,7 @@ public class MainView {
                             ListGhostsView.displayCapturedGhosts(hunterController);
                             break;
                         case 3:
-                            System.out.println("Eliminar un fantasma");
+                            DeleteGhostView.deleteGhost(hunterController, scanner);
                             break;
                         case 4:
                             FilterGhostsView.filterGhostsByClass(hunterController, scanner);
