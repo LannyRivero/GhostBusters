@@ -1,0 +1,76 @@
+# ==========================================
+# Java & Maven
+# ==========================================
+target/
+!.mvn/wrapper/maven-wrapper.jar
+*.class
+*.log
+*.ctxt
+
+# ==========================================
+# IDEs
+# ==========================================
+
+# IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# VSCode
+.vscode/
+.history/
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
+
+# ==========================================
+# OS-specific files
+# ==========================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ==========================================
+# Logs & Temp files
+# ==========================================
+*.log
+*.tmp
+*.bak
+*.swp
+
+# ==========================================
+# Coverage / Reports
+# ==========================================
+jacoco.exec
+jacoco-report/
+coverage/
+surefire-reports/
+failsafe-reports/
+
+# ==========================================
+# Misc
+# ==========================================
+*.properties~
+*.orig
+*.repl
