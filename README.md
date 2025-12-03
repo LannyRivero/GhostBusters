@@ -1,88 +1,56 @@
-# 👻 GhostBusters Asturias - Proyecto en Java
+# 👻 GhostBusters Asturias – CLI Java App  
+### Gestión de Fantasmas con MVC + TDD + Clean Code
 
-## 📜 Descripción
-Los habitantes de Asturias han comenzado a notar sucesos paranormales. Desde sombras gigantescas que inducen miedo hasta voces espectrales que manipulan la energía. Para combatir estas amenazas, se ha formado un nuevo equipo de **GhostBusters**.
+![Java](https://img.shields.io/badge/Java-17+-red.svg)
+![JUnit](https://img.shields.io/badge/Testing-JUnit5-green.svg)
+![Coverage](https://img.shields.io/badge/Coverage-70%2B%25-brightgreen.svg)
+![Architecture](https://img.shields.io/badge/Architecture-MVC-blue.svg)
+![Status](https://img.shields.io/badge/Status-Completed-success.svg)
 
-Tu misión será capturar, analizar y, si es necesario, liberar fantasmas atrapados para mantener la seguridad de la región. Con trampas de protones avanzadas y un detector ectoplásmico de última generación, debes recorrer los lugares más emblemáticos de Asturias para documentar e investigar las entidades paranormales.
+---
+
+## 🧩 Descripción General
+Los habitantes de Asturias han comenzado a notar **sombras inquietantes**, **ecos del más allá** y **manifestaciones espectrales** en lugares emblemáticos de la región.  
+Para mantener la paz, se ha fundado la unidad **GhostBusters Asturias**, equipada con trampas ectoplásmicas de última tecnología.
+
+Tu misión como desarrolladora(e) del sistema es permitir:
+
+- Capturar fantasmas  
+- Consultar y filtrar la base de datos ectoplásmica  
+- Analizar actividad paranormal por fecha  
+- Liberar entidades inofensivas  
+- Registrar todas las interacciones con UX de consola  
 
 🌍 **Ubicación de la base:** Un almacén industrial en Avilés, acondicionado con trampas de almacenamiento ectoplásmico.
 
+El resultado es una **aplicación Java sólida, modular, testeada y fácil de extender**, ideal para aprender o demostrar habilidades de arquitectura limpia y testing.
+
+---
+
 ## 🚀 Funcionalidades Principales
-- **Capturar fantasmas** y añadirlos a la base de datos.
-- **Visualizar lista de fantasmas capturados**, con sus características.
-- **Liberar fantasmas menos peligrosos** para hacer espacio en el contenedor ectoplásmico.
-- **Filtrar fantasmas por clase** para facilitar la investigación.
-- **Ver fantasmas capturados en un mes específico** para analizar patrones de actividad paranormal.
-- **Salir del programa** para continuar en otra ocasión.
 
-## 🕹️ Interacción con el Usuario (Ejemplo de Consola)
-```
-============================================
-    ¡Bienvenido a la Base Ghostbusters Asturias!
-    Gestiona tus fantasmas atrapados y protege la región
-============================================
-Opciones:
-1. Capturar un nuevo fantasma
-2. Ver lista de fantasmas capturados
-3. Liberar un fantasma
-4. Filtrar fantasmas por clase
-5. Ver fantasmas capturados en un mes
-6. Salir
+### ✔️ Capturar fantasmas  
+Incluye validaciones, selección de clase, nivel de amenaza, habilidad especial y fecha.
 
-Por favor, selecciona una opción (1-6):
-> 1
-Capturar un Nuevo Fantasma
-============================================
-Ingresa el nombre del fantasma:
-> Espíritu del Pescador de Lastres
+### ✔️ Listar fantasmas capturados  
+Con formato tabulado y ordenado.
 
-Selecciona la clase del fantasma:
-1. Clase I - Manifestación menor
-2. Clase II - Aparición móvil
-3. Clase III - Entidad inteligente
-4. Clase IV - Fantasma histórico
-5. Clase V - Espíritu antropomorfo
-6. Clase VI - Espíritu demoníaco
-7. Clase VII - Entidad ultraterrena
-> 4
+### ✔️ Filtrar por clase  
+Se listan únicamente entidades de una categoría específica.
 
-Nivel de peligro (Bajo, Medio, Alto, Crítico):
-> Bajo
+### ✔️ Filtrar por mes y año  
+Analiza patrones de actividad paranormal.
 
-Habilidad especial del fantasma:
-> Aparecer durante tormentas en la costa
+### ✔️ Liberar fantasmas  
+Útil para gestionar el espacio en el contenedor ectoplásmico.
 
-Fantasma "Espíritu del Pescador de Lastres" capturado exitosamente con nivel de afinidad ectoplásmica 7/10.
-```
+### ✔️ Menú interactivo de consola  
+Múltiples opciones, validación de entradas incorrectas y mensajes de error amigables.
 
-## 📌 Historias de Usuario
-### 🏆 Capturar Fantasmas
-**Como usuario, quiero** capturar un nuevo fantasma **para** expandir mi colección y proteger los lugares emblemáticos de Asturias.
+---
 
-### 🔍 Visualizar Fantasmas Atrapados
-**Como usuario, quiero** ver todos los fantasmas capturados **para** analizar sus características y planear estrategias.
-
-### 🚪 Liberar Fantasmas
-**Como usuario, quiero** liberar fantasmas menos peligrosos o inofensivos **para** hacer espacio en mi contenedor ectoplásmico.
-
-### 🎭 Filtrar Fantasmas por Clase
-**Como usuario, quiero** filtrar los fantasmas por clase **para** priorizar cuáles estudiar o utilizar en mis investigaciones.
-
-### 📅 Ver Fantasmas Capturados en un Mes Específico
-**Como usuario, quiero** obtener un listado de los fantasmas atrapados en un mes **para** estudiar patrones de actividad paranormal en Asturias.
-
-### 🔚 Salir del Programa
-**Como usuario, quiero** salir del juego **para** guardar mi progreso y continuar en otra ocasión.
-
-## 🛠️ Tecnologías y Metodología
-- **Lenguaje:** Java
-- **Arquitectura:** MVC
-- **Testing:** TDD (Cobertura mínima del 70%)
-- **Control de versiones:** Git & GitHub
-- **Sprint:** 1 semana
-
-## 📂 Estructura del Proyecto
-```
+## 🏗️ Arquitectura del Proyecto (MVC)
+```bash
 📦 GhostBusters-Asturias
  ┣ 📂 src
  ┃ ┣ 📂 dev.lanny.controller
@@ -102,6 +70,102 @@ Fantasma "Espíritu del Pescador de Lastres" capturado exitosamente con nivel de
  ┣ 📜 diagram.png (Diagrama de Clases)
  ┗ 📜 coverage_report.png (Cobertura de Pruebas)
 ```
+**Modelo:** 
+**Controlador:** orquesta acciones  
+**Vista:** entrada y salida por consola  
+**Test:** aplicación estricta de TDD  
+
+---
+
+## 🧪 Testing (TDD)
+
+El proyecto incluye **más de 70% de cobertura real**, no inflada, con JUnit5 y Hamcrest.
+
+### Tipos de tests incluidos:
+
+✔️ Unit tests de `GhostModel`  
+✔️ Unit tests de `HunterModel`  
+✔️ Tests del controlador `HunterController`  
+✔️ Tests de vistas simulando entrada del usuario  
+✔️ Validación de errores y flujos completos  
+✔️ Safe testing usando `ByteArrayInputStream / ByteArrayOutputStream`  
+
+Ejemplo de un test importante:
+
+```java
+assertThat(output, containsString("✅ ¡Fantasma capturado satisfactoriamente!"));
+```
+Este enfoque permite que la aplicación sea mantenible, verificable y extensible.
+
+## 🎮 Ejemplo de Interacción desde la Consola
+```
+============================================
+ ¡Bienvenido a la Base Ghostbusters Asturias!
+============================================
+1. Capturar un nuevo fantasma
+2. Ver lista de fantasmas capturados
+3. Liberar un fantasma
+4. Filtrar fantasmas por clase
+5. Ver fantasmas capturados en un mes
+6. Salir
+> 1
+
+Ingrese el nombre del fantasma:
+> Espíritu del Pescador de Lastres
+
+Seleccione la clase:
+1. Clase I - Manifestación menor
+4. Clase IV - Fantasma histórico
+> 4
+
+Nivel de peligro (Bajo, Medio, Alto, Crítico):
+> Bajo
+
+Fecha de captura (YYYY-MM-DD):
+> 2025-02-03
+
+Fantasma capturado con éxito.
+Afinidad ectoplásmica: 7/10
+
+```
+## 🛠️ Tecnologías y Metodología
+- **Lenguaje:** Java 17
+- **Arquitectura:** MVC
+- **Testing:** JUnit 5, TDD (Cobertura mínima del 70%)
+- **Control de versiones:** Git & GitHub
+- **Sprint:** 1 semana
+
+## ▶️ Cómo Ejecutar el Proyecto
+
+1. Clonar el repositorio:
+```bash
+git clone https://github.com/LannyRivero/GhostBusters.git
+cd GhostBusters
+```
+
+2. Compilar:
+```bash
+mvn clean compile
+```
+3. Ejecutar:
+```bash
+mvn exec:java -Dexec.mainClass="dev.lanny.ghost_busters.App"
+```
+
+## 🧪 Cómo Ejecutar los Tests
+```bash
+mvn test
+```
+- Opcional: generar reporte de cobertura:
+
+```bash
+mvn jacoco:report
+```
+- El resultado aparece en:
+```bash
+target/site/jacoco/index.html
+```
+
 ## ✅ Entregables
 - 📌 **Repositorio de GitHub:** https://github.com/LannyRivero/GhostBusters.git
 - 📌 **Diagrama de Clases:** _![image](https://github.com/user-attachments/assets/adf6f4d2-9cf6-4653-bfca-e53176a2dd18)_
@@ -120,5 +184,6 @@ Desarrollado por el equipo de Cazafantasmis d’Asturies 🏰⚡
 
 ---
 💡 *"No tengas miedo de los fantasmas... ¡haz que ellos te teman a ti!"*
+
 
 
