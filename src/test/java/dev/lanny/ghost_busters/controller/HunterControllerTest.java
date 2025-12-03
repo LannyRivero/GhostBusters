@@ -142,7 +142,7 @@ public class HunterControllerTest {
     @DisplayName("Validar que se elimina satisfactoriamente")
     public void testDelete_Succes() {
         hunterController.captureGhost(ghost1);
-        boolean succes = hunterController.freedomGhost(ghost1.getId());
+        boolean succes = hunterController.freeGhost(ghost1.getId());
         assertThat(succes, is(true));
         assertThat(hunterController.getCapturedGhosts(), not(contains(ghost1)));
     }

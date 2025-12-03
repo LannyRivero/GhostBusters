@@ -36,7 +36,7 @@ public class HunterController {
                 .collect(Collectors.toList());
     }
 
-    public boolean freedomGhost(int ghostId) {
+    public boolean freeGhost(int ghostId) {
         return hunter.deleteGhost(ghostId);
     }
 
